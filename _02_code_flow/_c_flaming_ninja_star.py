@@ -16,40 +16,40 @@ if __name__ == '__main__':
     window = turtle.Screen()
     
     baseSize = 200;         # the size of the black part of the star
-    flameSize = 130;        # the length of the flaming arms
+    flameSize = 135;        # the length of the flaming arms
     
     # Make a new turtle
-    
+    myTurtle=turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    myTurtle.shape('turtle')
     # Set the turtle width to 2
-    
+    myTurtle.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    myTurtle.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change this later)
-        
+    for i in range(25):
         # Set the turtle .fillcolor() to orange
-        
+        myTurtle.fillcolor('red')
         # Call the turtle .begin_fill() function
-        
+        myTurtle.begin_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees will turn a full circle)
-        
+        myTurtle.right(90)
         # DRAW           Move the turtle 64 pixels
-        
+        myTurtle.forward(64)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative numbers will turn the turtle counter-clockwise.)
-        
+        myTurtle.left(40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+        myTurtle.forward(flameSize)
         #                Turn the turtle to the right 170 degrees
-         
+        myTurtle.right(170)
         #                Move the turtle the distance in the variable flameSize (again)
-         
+        myTurtle.forward(flameSize)
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+        myTurtle.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+        myTurtle.forward(baseSize)
         # Call the turtle .end_fill() method
-        
+        myTurtle.end_fill()
     # Hide your turtle so you can see the pattern.
         
     # TEST   Run the program. Check that your shape is the same as the first picture in the recipe. 
